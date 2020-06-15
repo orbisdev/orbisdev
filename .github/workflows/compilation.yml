@@ -33,7 +33,7 @@ jobs:
         export ORBISDEV=$PWD/orbisdev
         export PS4TOOLCHAIN=$ORBISDEV/toolchain
         export PS4SDK=$ORBISDEV
-        export PATH=$ORBISDEV/bin:$PS4TOOLCHAIN/x86_64-pc-freebsd9/bin:$PS4TOOLCHAIN/bin:$PATH
+        export PATH=$PATH:$ORBISDEV/bin:$PS4TOOLCHAIN/x86_64-pc-freebsd9/bin:$PS4TOOLCHAIN/bin
         ./build-all.sh
 
     - name: Get short SHA

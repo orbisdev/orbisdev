@@ -4,7 +4,7 @@ FROM $BASE_DOCKER_IMAGE
 
 COPY . /src
 
-RUN apk add build-base clang bash git wget
+RUN apk add build-base clang bash git wget cmake linux-headers
 RUN cd /src && ./build-extra.sh
 
 # Second stage of Dockerfile
