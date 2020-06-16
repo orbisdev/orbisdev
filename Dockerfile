@@ -11,7 +11,6 @@ RUN cd /src && ./build-extra.sh
 FROM alpine:latest  
 
 ENV ORBISDEV /usr/local/orbisdev
-ENV PS4SDK $ORBISDEV
 ENV PATH $ORBISDEV/bin:$PATH
 
 COPY --from=0 ${ORBISDEV} ${ORBISDEV}

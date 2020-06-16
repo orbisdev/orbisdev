@@ -31,7 +31,6 @@ jobs:
     - name: Runs all the stages in the shell
       run: |
         export ORBISDEV=$PWD/orbisdev
-        export PS4SDK=$ORBISDEV
         export PATH=$ORBISDEV/bin:$PATH
         ./build-all.sh
 

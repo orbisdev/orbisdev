@@ -22,7 +22,6 @@ These scripts download (`git clone`) and install:
 2. Add this to your login script (example: ~/.bash_profile)  
 ```
 export ORBISDEV=/usr/local/orbisdev
-export PS4SDK=$ORBISDEV
 export PATH=$ORBISDEV/bin:$PATH
 ```
 
