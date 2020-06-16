@@ -31,9 +31,8 @@ jobs:
     - name: Runs all the stages in the shell
       run: |
         export ORBISDEV=$PWD/orbisdev
-        export PS4TOOLCHAIN=$ORBISDEV/toolchain
         export PS4SDK=$ORBISDEV
-        export PATH=$PATH:$ORBISDEV/bin:$PS4TOOLCHAIN/x86_64-pc-freebsd9/bin:$PS4TOOLCHAIN/bin
+        export PATH=$ORBISDEV/bin:$PATH
         ./build-all.sh
 
     - name: Get short SHA

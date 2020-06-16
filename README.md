@@ -22,9 +22,8 @@ These scripts download (`git clone`) and install:
 2. Add this to your login script (example: ~/.bash_profile)  
 ```
 export ORBISDEV=/usr/local/orbisdev
-export PS4TOOLCHAIN=$ORBISDEV/toolchain
 export PS4SDK=$ORBISDEV
-export PATH=$ORBISDEV/bin:$PS4TOOLCHAIN/x86_64-pc-freebsd9/bin:$PS4TOOLCHAIN/bin:$PATH
+export PATH=$ORBISDEV/bin:$PATH
 ```
 
 3. Run build-all.sh  

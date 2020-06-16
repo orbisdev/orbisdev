@@ -21,9 +21,3 @@ touch $PS4SDK/test.tmp 1> /dev/null || { echo "ERROR: Grant write permissions fo
 
 ## Check for $ORBISDEV/bin in the path.
 echo $PATH | grep $ORBISDEV/bin 1> /dev/null || { echo "ERROR: Add $ORBISDEV/bin to your path before continuing."; exit 1; }
-
-## Check for $PS4TOOLCHAIN/bin in the path.
-echo $PATH | grep $PS4TOOLCHAIN/bin 1> /dev/null || { echo "ERROR: Add $PS4TOOLCHAIN/bin to your path before continuing."; exit 1; }
-
-## Check for $PS4TOOLCHAIN/x86_64-pc-freebsd9/bin in the path.
-echo $PATH | grep $PS4TOOLCHAIN/x86_64-pc-freebsd9/bin 1> /dev/null || { echo "ERROR: Add $PS4TOOLCHAIN/x86_64-pc-freebsd9/bin to your path before continuing."; exit 1; }
