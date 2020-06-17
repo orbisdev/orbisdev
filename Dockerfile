@@ -4,7 +4,13 @@ FROM $BASE_DOCKER_IMAGE
 
 COPY . /src
 
-RUN apk add build-base clang bash git wget cmake linux-headers
+RUN apk add build-base clang bash git wget cmake linux-headers 
+
+# Install dontnet
+RUN apk add libintl icu-dev
+RUN wget https://dot.net/v1/dotnet-install.sh && chmod 755 dotnet-install.sh && ./dotnet-install.sh -c Current --install-dir ~/cli
+ENV PATH ~/cli:$PATH
+
 RUN cd /src && ./build-extra.sh
 
 # Second stage of Dockerfile
