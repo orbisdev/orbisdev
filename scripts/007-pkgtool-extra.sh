@@ -14,5 +14,5 @@ cd LibOrbisPkg && git pull && git fetch origin && git reset --hard origin/master
 dotnet publish -c Release LibOrbisPkg.Core.sln || { exit 1; }
 
 ## Install => Copy to $ORBISDEV/bin
-mkdir -p $ORBISDEV/bin/pkgtool
-cp -R PkgTool.Core/bin/Release/netcoreapp3.0/publish/. $ORBISDEV/bin/pkgtool/
+mkdir -p $ORBISDEV/bin/pkgtools
+cp -R PkgTool.Core/bin/Release/netcoreapp3.0/publish/. $ORBISDEV/bin/pkgtools/
