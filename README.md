@@ -17,7 +17,7 @@ These scripts download (`git clone`) and install:
 
 ## Requirements
 
-1. Install clang, make, patch, git, texinfo wget if you don't have those.
+1. Install clang, make, patch, git, texinfo wget, bison, flex, m4 if you don't have those.
 
 2. Add this to your login script (example: ~/.bash_profile)  
 ```
