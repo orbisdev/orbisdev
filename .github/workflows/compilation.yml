@@ -27,7 +27,8 @@ jobs:
       if: matrix.os == 'macOS-latest'
       run: |
         brew update
-        brew install texinfo bison flex ninja
+        brew install texinfo bison flex 
+        brew install ninja || true
 
     - name: Runs all the stages in the shell
       run: |
