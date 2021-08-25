@@ -4,7 +4,7 @@ FROM $BASE_DOCKER_IMAGE
 
 COPY . /src
 
-RUN apk add build-base clang bash git wget cmake linux-headers 
+RUN apk add build-base clang bash git wget cmake linux-headers bison flex m4
 
 # Install dontnet
 RUN apk add libintl icu-dev
