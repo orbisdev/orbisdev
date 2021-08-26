@@ -17,7 +17,7 @@ These scripts download (`git clone`) and install:
 
 ## Requirements
 
-1. Install clang, make, patch, git, texinfo wget, bison, flex and m4 if you don't have those.
+1. Install clang, make, patch, git, texinfo wget, bison, flex, dotnet (3.1) and m4 if you don't have those.
 
 2. Add this to your login script (example: ~/.bash_profile)  
 ```
@@ -40,4 +40,12 @@ If you want, you *JUST* can install the extra dependencies as `orbisdev-orbisGl 
 ./build-extra.sh
 ```
 
+## HELP
+How to install the specific version of the dotnet 3.1 in : 
+- OSX: [homebrew-dotnet-sdk-versions](https://github.com/isen-ng/homebrew-dotnet-sdk-versions "homebrew-dotnet-sdk-versions")
+- Ubuntu: [dotnet](https://docs.microsoft.com/es-es/dotnet/core/install/linux-ubuntu "dotnet")
+- From source code: 
+```bash
+wget https://dot.net/v1/dotnet-install.sh && chmod 755 dotnet-install.sh && ./dotnet-install.sh -c Current --install-dir ~/cli
+```
 ## Thanks
