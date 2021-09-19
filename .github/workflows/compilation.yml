@@ -21,14 +21,13 @@ jobs:
       if: matrix.os == 'ubuntu-latest'
       run: |
         sudo apt-get update
-        sudo apt-get -y install texinfo bison flex findutils ninja-build clang
+        sudo apt-get -y install texinfo bison flex findutils ninja-build
     
     - name: Install Mac dependencies
       if: matrix.os == 'macOS-latest'
       run: |
         brew update
-        brew install texinfo bison flex 
-        brew install ninja || true
+        brew install texinfo bison flex ninja
 
     - name: Runs all the stages in the shell
       run: |
