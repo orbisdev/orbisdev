@@ -1,8 +1,9 @@
 # orbisdev
 Main PS4 Repo for building the whole `Orbis Development` environment in your local machine.
 
-![CI](https://github.com/orbisdev/orbisdev/workflows/CI/badge.svg)
-![CI-Docker](https://github.com/orbisdev/orbisdev/workflows/CI-Docker/badge.svg)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/orbisdev/orbisdev/CI?label=CI&logo=github&style=for-the-badge)](https://github.com/orbisdev/orbisdev/actions?query=workflow%3ACI)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/orbisdev/orbisdev/CI-Docker?label=CI-Docker&logo=github&style=for-the-badge)](https://github.com/orbisdev/orbisdev/actions?query=workflow%3ACI-Docker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/orbisdev/orbisdev?style=for-the-badge)](https://hub.docker.com/r/orbisdev/orbisdev/tags)
 
 This program will automatically build and install the whole a compiler and other tools used in the creation of homebrew software for the Sony PlayStation® 4 videogame system.
 
