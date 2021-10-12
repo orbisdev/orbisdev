@@ -2,10 +2,10 @@
 # Script phase by fjtrujy
 
 ## Download the source code.
-if test ! -d "orbisdev-liborbis/.git"; then
-	git clone https://github.com/orbisdev/orbisdev-liborbis && cd orbisdev-liborbis || exit 1
+if test ! -d "orbisdev-utils/.git"; then
+	git clone https://github.com/orbisdev/orbisdev-utils && cd orbisdev-utils || exit 1
 else
-	cd orbisdev-liborbis &&
+	cd orbisdev-utils &&
 		git pull && git fetch origin &&
 		git reset --hard origin/master || exit 1
 fi
