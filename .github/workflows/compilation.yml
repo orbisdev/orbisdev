@@ -12,13 +12,19 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, ubuntu-18.04]
 
     steps:
     - uses: actions/checkout@v2
     
     - name: Install Ubuntu dependencies
       if: matrix.os == 'ubuntu-latest'
+      run: |
+        sudo apt-get update
+        sudo apt-get -y install texinfo bison flex findutils ninja-build
+        
+    - name: Install Ubuntu 18.04 dependencies
+      if: matrix.os == 'ubuntu-18.04'
       run: |
         sudo apt-get update
         sudo apt-get -y install texinfo bison flex findutils ninja-build
