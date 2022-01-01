@@ -2,10 +2,10 @@
 # Script phase by fjtrujy
 
 ## Download the source code.
-if test ! -d "orbisdev-orbisGl/.git"; then
-	git clone https://github.com/orbisdev/orbisdev-orbisGl && cd orbisdev-orbisGl || exit 1
+if test ! -d "orbisdev-raylib/.git"; then
+	git clone https://github.com/orbisdev/orbisdev-raylib && cd orbisdev-raylib || exit 1
 else
-	cd orbisdev-orbisGl &&
+	cd orbisdev-raylib &&
 		git pull && git fetch origin &&
 		git reset --hard origin/master || exit 1
 fi
