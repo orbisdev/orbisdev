@@ -14,7 +14,5 @@ fi
 PROC_NR=$(getconf _NPROCESSORS_ONLN)
 
 ## Build and install.
-make --quiet -j $PROC_NR clean || { exit 1; }
-make --quiet -j $PROC_NR || { exit 1; }
+./raylib4Orbis.sh
 make --quiet -j $PROC_NR install || { exit 1; }
-make --quiet -j $PROC_NR clean || { exit 1; }
