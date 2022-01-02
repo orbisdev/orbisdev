@@ -23,6 +23,10 @@ These scripts download (`git clone`) and install:
 ```
 export ORBISDEV=/usr/local/orbisdev
 export PATH=$ORBISDEV/bin:$PATH
+#change to your nfs root path
+export SELF_PATH_INSTALL=/usr/local/orbisdev/git/ps4sh/bin/hostapp
+#change to your server ip 
+export DEBUGNET_PC_IP=192.168.1.12
 ```
 
 3. Run build-all.sh  
