@@ -38,7 +38,7 @@ export DEBUGNET_PC_IP=192.168.1.12
 This repo also uses CI/CD to create a docker image called `orbisdev/orbisdev:latest`per change. This is quite useful if you're a developer that want to create/port an application to the PS4. So, you just can go there and compile your project using this docker image.
 
 ## Extra steps
-If you want, you *JUST* can install the extra dependencies as `orbisdev-orbisGl and orbisdev-orbisGl2`, to achieve this just execute
+If you want, you *JUST* can install the extra tools for generating pkg, to achieve this just execute
 
 ```
 ./build-extra.sh
