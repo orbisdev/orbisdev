@@ -3,7 +3,7 @@
 
 ## Download the source code.
 if test ! -d "orbisdev-liborbis/.git"; then
-	git clone https://github.com/orbisdev/orbisdev-liborbis -b newyear && cd orbisdev-liborbis || exit 1
+	git clone https://github.com/orbisdev/orbisdev-liborbis && cd orbisdev-liborbis || exit 1
 else
 	cd orbisdev-liborbis &&
 		git pull && git fetch origin &&
