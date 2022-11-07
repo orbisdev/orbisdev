@@ -2,13 +2,9 @@ name: Build toolchain
 
 on:
   push:
-    paths-ignore:
-      - '*.md'
-  pull_request:
-    paths-ignore:
-      - '*.md'
   repository_dispatch:
     types: [run_build]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -26,7 +22,7 @@ jobs:
       run: |
         # export first to set globally for $path
         export ORBISDEV=$PWD/orbisdev
-        echo "ORBISDEV=$PWD/orbisdev"   >> $GITHUB_ENV
+        echo "ORBISDEV=$PWD/orbisdev" >> $GITHUB_ENV
         echo "PATH=$ORBISDEV/bin:$PATH" >> $GITHUB_ENV
 
     - name: Install Ubuntu dependencies
@@ -43,20 +39,8 @@ jobs:
         brew update
         brew install texinfo bison flex ninja
 
-    - name: Build stage 1
-      run: scripts/001-toolchain.sh
-    - name: Build stage 2
-      run: scripts/002-sdkvanilla.sh
-    - name: Build stage 3
-      run: scripts/003-liborbis.sh
-    - name: Build stage 4
-      run: scripts/004-raylib-extra.sh
-    - name: Build stage 5
-      run: scripts/005-lief-extra.sh
-    - name: Build stage 6
-      run: scripts/006-pkgtool-extra.sh
-    - name: Build stage 7
-      run: scripts/007-gp4gen-extra.sh
+    - name: Runs all the stages in the shell
+      run: ./build-all.sh
 
     - name: Compress orbisdev folder
       run: tar -zcvf orbisdev-${{matrix.os}}.tar.gz orbisdev
