@@ -13,7 +13,10 @@ These scripts download (`git clone`) and install:
 - [orbisdev-toolchain](https://github.com/orbisdev/orbisdev-toolchain "orbisdev-toolchain") 
 - [orbisdev-sdkvanilla](https://github.com/orbisdev/orbisdev-sdkvanilla "orbisdev-sdkvanilla") 
 - [orbisdev-liborbis](https://github.com/orbisdev/orbisdev-liborbis "orbisdev-liborbis") 
-- [orbisdev-raylib](https://github.com/orbisdev/orbisdev-raylib "orbisdev-raylib") 
+- [orbisdev-raylib](https://github.com/orbisdev/orbisdev-raylib "orbisdev-raylib")
+- [lief](https://github.com/orbisdev/lief "lief")
+- [pkgtool](https://github.com/maxton/LibOrbisPkg "pkgtool")
+- [gp4gen](https://github.com/orbisdev/orbisdev-gp4gen "orbisdev-gp4gen")
 
 ## Requirements
 
