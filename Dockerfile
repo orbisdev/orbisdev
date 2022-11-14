@@ -14,7 +14,7 @@ ENV PATH ~/cli:$PATH
 RUN cd /src && ./build-extra.sh
 
 # Second stage of Dockerfile
-FROM alpine:latest  
+FROM alpine:3.15.6
 
 ENV ORBISDEV /usr/local/orbisdev
 ENV PATH $ORBISDEV/bin:$PATH
